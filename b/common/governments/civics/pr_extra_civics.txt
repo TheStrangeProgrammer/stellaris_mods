@@ -1,0 +1,33 @@
+
+civic_sergiu = {
+
+	can_build_ruler_ship = yes
+
+	modification = no
+	random_weight = {
+		base = 0 # Should be fairly rare
+		modifier = {
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+
+	modifier = {
+		shipclass_starbase_hull_mult = 1
+		ship_hull_mult = 1
+		ship_armor_mult = 1
+		ship_shield_mult = 1
+		ship_weapon_damage = 0.5
+		country_starbase_capacity_add = 4
+		all_technology_research_speed = 0.1
+		planet_stability_add = 20
+		planet_colony_development_speed_mult = 0.5
+		country_naval_cap_mult = 1
+		country_admin_cap_mult = 2
+		
+		science_ship_survey_speed = 0.5
+		pop_amenities_usage_mult = -0.25
+		starbase_shipyard_build_cost_mult = -0.25
+		pop_growth_speed = 0.5
+	}
+}

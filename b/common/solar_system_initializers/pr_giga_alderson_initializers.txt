@@ -1,0 +1,244 @@
+pr_giga_alderson_start = {
+	class = rl_starting_stars
+	usage = origin
+	flags = {
+		empire_home_system
+		pr_giga_origin_alderson
+	}
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+		planet = {
+			class = pc_alderson_slice_gaia
+			orbit_angle = 90
+			orbit_distance = 180
+			size = 15
+			home_planet = yes
+		}
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_shome_event
+		every_neighbor_system = {
+			remove_hyperlane = {
+				from = prev
+				to = this
+			}
+		}
+		set_spawn_system_batch = begin
+		spawn_system = {
+			hyperlane = no
+			initializer = pr_giga_alderson_s1
+			is_discovered = yes
+			min_distance = 6
+			max_distance = 11
+			min_orientation_angle = 0
+			max_orientation_angle = 5
+		}
+		spawn_system = {
+			hyperlane = no
+			initializer = pr_giga_alderson_s2
+			is_discovered = yes
+			min_distance = 6
+			max_distance = 11
+			min_orientation_angle = 45
+			max_orientation_angle = 50
+		}
+		spawn_system = {
+			hyperlane = no
+			initializer = pr_giga_alderson_s3
+			is_discovered = yes
+			min_distance = 6
+			max_distance = 11
+			min_orientation_angle = 90
+			max_orientation_angle = 95
+		}
+		spawn_system = {
+			hyperlane = no
+			initializer = pr_giga_alderson_s4
+			is_discovered = yes
+			min_distance = 15
+			max_distance = 20
+			min_orientation_angle = 0
+			max_orientation_angle = 5
+		}
+		spawn_system = {
+			hyperlane = no
+			initializer = pr_giga_alderson_shome
+			is_discovered = yes
+			min_distance = 15
+			max_distance = 20
+			min_orientation_angle = 45
+			max_orientation_angle = 50
+		}
+		spawn_system = {
+			hyperlane = no
+			initializer = pr_giga_alderson_s5
+			is_discovered = yes
+			min_distance = 15
+			max_distance = 20
+			min_orientation_angle = 90
+			max_orientation_angle = 95
+		}
+		add_hyperlane = {
+			from = this
+			to = event_target:pr_giga_alderson_s1_event
+		}
+		add_hyperlane = {
+			from = this
+			to = event_target:pr_giga_alderson_s2_event
+		}
+		add_hyperlane = {
+			from = this
+			to = event_target:pr_giga_alderson_s3_event
+		}
+		event_target:pr_giga_alderson_s2_event = {
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s2_event
+				to = event_target:pr_giga_alderson_s1_event
+			}
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s2_event
+				to = event_target:pr_giga_alderson_s3_event
+			}
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s2_event
+				to = event_target:pr_giga_alderson_sgate_event
+			}
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s2_event
+				to = event_target:pr_giga_alderson_s4_event
+			}
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s2_event
+				to = event_target:pr_giga_alderson_s5_event
+			}
+		}
+		event_target:pr_giga_alderson_s1_event = {
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s1_event
+				to = event_target:pr_giga_alderson_s4_event
+			}
+		}
+		event_target:pr_giga_alderson_s3_event = {
+			add_hyperlane = {
+				from = event_target:pr_giga_alderson_s3_event
+				to = event_target:pr_giga_alderson_s5_event
+			}
+		}
+		event_target:pr_giga_alderson_sgate_event = {
+			every_neighbor_system = {
+				ignore_hyperlanes = yes
+				limit = {
+					NOR = {
+						has_hyperlane_to = event_target:pr_giga_alderson_s1_event
+						has_hyperlane_to = event_target:pr_giga_alderson_s2_event
+						has_hyperlane_to = event_target:pr_giga_alderson_s3_event
+						has_hyperlane_to = event_target:pr_giga_alderson_s4_event
+						has_hyperlane_to = event_target:pr_giga_alderson_s5_event
+						has_hyperlane_to = event_target:pr_giga_alderson_shome_event
+					}
+				}
+				add_hyperlane = {
+					from = event_target:pr_giga_alderson_sgate_event
+					to = this
+				}
+			}
+		}
+		set_spawn_system_batch = end
+		set_star_flag = sol_sector		### to stop New Frontiers from overriding 'planet' classes
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+}
+
+pr_giga_alderson_s1 = {
+	usage = origin
+	class = rl_starting_stars
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_s1_event
+	}
+}
+
+pr_giga_alderson_s2 = {
+	usage = origin
+	class = rl_starting_stars
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_s2_event
+	}
+}
+
+pr_giga_alderson_s3 = {
+	usage = origin
+	class = rl_standard_stars
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_s3_event
+	}
+}
+
+pr_giga_alderson_s4 = {
+	usage = origin
+	class = rl_standard_stars
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_s4_event
+	}
+}
+
+pr_giga_alderson_s5 = {
+	usage = origin
+	class = sc_black_hole
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_s5_event
+	}
+}
+
+pr_giga_alderson_shome = {
+	usage = origin
+	
+	class = rl_starting_stars
+	### dummy star / hidden by the megastructure hub
+	planet = {
+		class = star
+		orbit_angle = 0
+		orbit_distance = 0
+		size = 35
+	}
+	init_effect = {
+		save_global_event_target_as = pr_giga_alderson_sgate_event
+	}
+}
