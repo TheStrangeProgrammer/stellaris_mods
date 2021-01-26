@@ -1,0 +1,31 @@
+
+sg_civic = {
+
+	can_build_ruler_ship = yes
+
+	modification = no
+	random_weight = {
+		base = 0 # Should be fairly rare
+		modifier = {
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+
+	modifier = {
+		ship_hull_mult=0.5
+		ship_shield_mult=0.5
+		ship_armor_mult=0.5
+		ship_weapon_damage=0.5
+
+		all_technology_research_speed = 0.10
+		planet_jobs_produces_mult= 0.10
+		science_ship_survey_speed = 1
+		country_starbase_capacity_add = 4
+		planet_building_build_speed_mult = 1
+		starbase_outpost_influence_cost_mult = -0.3
+		shipclass_constructor_build_cost_mult = -0.3
+		shipclass_science_ship_build_cost_mult = -0.3
+		leaders_energy_cost_mult = -0.3
+	}
+}

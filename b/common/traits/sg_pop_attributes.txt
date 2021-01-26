@@ -1,0 +1,16 @@
+
+sg_trait = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 9
+	custom_tooltip = TRAIT_TD_ETERNAL_YOUTH_EFFECT
+
+	modification = no
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+
+	immortal_leaders = yes
+	modifier = {
+		army_damage_mult = 0.5
+		army_health = 0.5
+	}
+}

@@ -1,0 +1,61 @@
+﻿l_english:
+
+trait_pr_protector_origin: "The Protectors"
+trait_pr_protector_origin_desc: "§LThese machines are biomechanical in nature and have blue blood in their veins and maintain their body functions with numerous nanobot cells. They are almost identical to biological species but they are artificial in their design.§!"
+
+trait_pr_protector_army: "Protector Armies"
+trait_pr_protector_army_desc: "§LThese machines have strong suits that help them in battle.§!"
+
+trait_pr_protector_pop: "Protector Population"
+trait_pr_protector_pop_desc: "§LThese machines have strong suits that help them in day to day jobs.§!"
+
+trait_pr_protector_planet: "Protector Planet"
+trait_pr_protector_planet_desc: "§LThese machines have living planets.§!"
+
+trait_pr_protector_leader: "Protector Leaders"
+trait_pr_protector_leader_desc: "§LThese machines have great leaders.§!"
+
+trait_pr_protector_ship: "Protector Living Ships"
+trait_pr_protector_ship_desc: "§LThese machines have living ships.§!"
+
+pr_wear_trait_ships: "Protector Living Ships"
+pr_wear_trait_ships_desc: "§LThese machines have living ships.§!"
+
+pr_origin_alderson: "Protectors"
+pr_origin_alderson_desc: "Ancient species with stronger and more expensive ships."
+
+protector_civic_trigger: "£trigger_no£  Country needs to have §YProtectors§! civic"
+
+protector: "Protector"
+protector_plural: "Protectors"
+
+pr_d_alderson_generator: "Ancient Generator"
+pr_d_alderson_generator_desc: "An ancient generator that automatically produces the upkeep needed for the districts"
+
+pr_wear_living_ships: "Living Ships"
+
+PROTECTOR_BOW: "Siegebreaker Bow 1"
+PROTECTOR_BOW_2: "Basilisk Bow 1"
+PROTECTOR_BOW_3: "Stormbringer Bow 1"
+PROTECTOR_BOW_4: "Broadside Bow"
+
+
+PROTECTOR_MID1: "Artillery Core 1"
+PROTECTOR_MID1_2: "Bombardment Core 1"
+PROTECTOR_MID1_3: "Carronade Core 1"
+PROTECTOR_MID1_4: "Barrage Core 1"
+
+PROTECTOR_MID2: "Artillery Core 2"
+PROTECTOR_MID2_2: "Bombardment Core 2"
+PROTECTOR_MID2_3: "Carronade Core 2"
+PROTECTOR_MID2_4: "Barrage Core 2"
+
+PROTECTOR_MID3_1: "Artillery Core 3"
+PROTECTOR_MID3_2: "Bombardment Core 3"
+PROTECTOR_MID3_3: "Carronade Core 3"
+PROTECTOR_MID3_4: "Barrage Core 3"
+
+PROTECTOR_STERN: "Artillery Stern"
+PROTECTOR_STERN_2: "Broadside Stern"
+PROTECTOR_STERN_3: "Missile Stern"
+PROTECTOR_STERN_4: "Torrent Stern"
