@@ -1,27 +1,10 @@
-#civic_example = {
-#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
-#	potential = {}								# requirements list, see ../readme_requirements.txt
-#	possible = {}								# requirements list, see ../readme_requirements.txt
-#	pickable_at_start = yes / no				# default: yes
-#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
-#
-#	random_weight = { base = 5 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
-#
-#	modifier = {}								# modifier added to the country if the civic is selected and valid
-#	can_build_ruler_ship = yes / no				# default: no
-#	traits = { trait = ... }					# default: empty; trait set to enforce on the primary species. They cannot be removed, but more can be added if points/picks permit
-#	has_secondary_species = {					# default: none; if present, will enable secondary species customization in empire designer and will create secondary species & pops at galaxy generation time (see empire_init_create_capital_secondary_pops)
-#		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
-#	}
-#}
-civic_protectors_origin = {
+pr_civic_protectors_origin = {
 	# playable = { host_has_dlc = "Apocalypse" }
 	potential = {
 		origin = {
 			value = pr_origin_alderson
 		}
 	}
-	can_build_ruler_ship = yes
 	possible = {
 		origin = {
 			value = pr_origin_alderson
@@ -29,13 +12,12 @@ civic_protectors_origin = {
 	}
 	modification = no
 	random_weight = {
-		base = 0		
+		base = 0
 		modifier = {
 			factor = 0
 			has_global_flag = game_started
 		}
 	}
-	
 	modifier = {
 		country_naval_cap_mult = 0.5
 		country_admin_cap_mult = -0.5
@@ -46,8 +28,8 @@ civic_protectors_origin = {
 		ascension_perks_add = 2
 		planet_districts_cost_mult = -0.5
 		num_tech_alternatives_add = 1
-		#megastructure_build_cap_add = 1
-		megastructure_build_speed_mult = 0.5
+		country_megastructure_build_cap_add = 1
+		megastructure_build_speed_mult = 0.25
 		country_base_influence_produces_add = 1
 	}
 }

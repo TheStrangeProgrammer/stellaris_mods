@@ -1,0 +1,34 @@
+penetration_inhibitor = {
+	icon = "GFX_spaceport_module_atmospheric_manipulator"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = { 
+			has_technology = pr_tech_penetration_inhibitor 
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	equipped_component = "PR_STARBASE_AURA_PENETRATION_INHIBITOR"
+
+
+}

@@ -1,0 +1,33 @@
+
+utility_component_template = {
+	key = "PR_STARBASE_AURA_PENETRATION_INHIBITOR"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+	class_restriction = {
+		shipclass_starbase
+	}
+
+	should_ai_use = no
+
+	
+	hostile_aura = {
+		name = "pr_aura_starbase_penetration_inhibitor"
+		system_wide = yes
+		stack_info = {
+			id = pr_hostile_penetration_inhibitor_aura
+			priority = 10
+		}
+		modifier = {
+			ship_shield_penetration_mult = -0.5
+		}
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+}

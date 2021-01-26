@@ -1,0 +1,11 @@
+pr_tech_penetration_inhibitor = {
+	cost = 0
+	area = engineering
+	tier = 0
+	category = { materials }
+	weight = 0
+	ai_update_type = all
+	weight_modifier = {
+		factor = 0
+	}
+}

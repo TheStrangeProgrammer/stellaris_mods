@@ -1,0 +1,8 @@
+on_game_start_country = {
+	events = {
+		pr_giga_alderson.001
+		pr_giga_alderson.002
+		pr_giga_alderson.003
+		pr_giga_alderson.004
+	}
+}

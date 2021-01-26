@@ -1,0 +1,48 @@
+﻿l_english:
+
+pr_trait_protector_origin: "The Protectors"
+pr_trait_protector_origin_desc: "§LThese machines are biomechanical in nature and have blue blood in their veins and maintain their body functions with numerous nanobot cells. They are almost identical to biological species but they are artificial in their design.§!"
+
+pr_trait_protector_army: "Protector Armies"
+pr_trait_protector_army_desc: "§LThese machines have strong suits that help them in battle.§!"
+
+pr_trait_protector_pop: "Protector Population"
+pr_trait_protector_pop_desc: "§LThese machines have strong suits that help them in day to day jobs.§!"
+
+pr_trait_protector_planet: "Protector Planet"
+pr_trait_protector_planet_desc: "§LThese machines have living planets.§!"
+
+pr_trait_protector_leader: "Protector Leaders"
+pr_trait_protector_leader_desc: "§LThese machines have great leaders.§!"
+
+pr_trait_protector_ship: "Protector Living Ships"
+pr_trait_protector_ship_desc: "§LThese machines have living ships.§!"
+
+pr_wear_trait_ships: "Protector Living Ships"
+pr_wear_trait_ships_desc: "§LThese machines have living ships.§!"
+
+pr_origin_alderson: "Protectors"
+pr_origin_alderson_desc: "Ancient species with stronger and more expensive ships."
+
+protector_civic_trigger: "£trigger_no£  Country needs to have §YProtectors§! civic"
+
+pr_civic_protectors_origin:  "The Protectors"
+pr_civic_protectors_origin_desc:  "The Protectors"
+    
+protector: "Protector"
+protector_plural: "Protectors"
+
+pr_d_alderson_generator: "Ancient Generator"
+pr_d_alderson_generator_desc: "An ancient generator that automatically produces the upkeep needed for the districts"
+
+pr_wear_living_ships: "Living Ships"
+
+pr_tech_penetration_inhibitor: "FTLP Inhibitor"
+pr_tech_penetration_inhibitor_desc: "FTLP Inhibitor"
+
+pr_aura_starbase_penetration_inhibitor: "$offensive_aura$ - $pr_sm_penetration_inhibitor$"
+sm_penetration_inhibitor: "Penetration Inhibitor"
+sm_penetration_inhibitor_desc: "While the Starbase is still operational, it inhibits shield penetration."
+PR_STARBASE_AURA_PENETRATION_INHIBITOR: "$pr_sm_penetration_inhibitor$"
+
+ 
